@@ -4,22 +4,30 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Scorp31io&#39;s Blog</title>
+    <title>React生命周期 | Scorp31io&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Scorp31io">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Scorp31io's Blog">
-<meta property="og:url" content="http://ngstyle.github.io/index.html">
+    <meta name="description" content="React生命周期1.创建类var Lifecycle = React.createClass({})
+2.实例化 getInitialState()  初始化state componentWillMount()  渲染之前处理业务 render()  渲染页面 componentDidMount()  渲染之后执行，比如请求网络
+3.更新componentWillRecieveProps()">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React生命周期">
+<meta property="og:url" content="http://ngstyle.github.io/2015/11/26/react-intro/index.html">
 <meta property="og:site_name" content="Scorp31io's Blog">
-<meta property="og:description">
+<meta property="og:description" content="React生命周期1.创建类var Lifecycle = React.createClass({})
+2.实例化 getInitialState()  初始化state componentWillMount()  渲染之前处理业务 render()  渲染页面 componentDidMount()  渲染之后执行，比如请求网络
+3.更新componentWillRecieveProps()">
+<meta property="og:image" content="http://img.blog.csdn.net/20151126184328776">
+<meta property="og:updated_time" content="2015-11-26T11:07:45.004Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Scorp31io's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="React生命周期">
+<meta name="twitter:description" content="React生命周期1.创建类var Lifecycle = React.createClass({})
+2.实例化 getInitialState()  初始化state componentWillMount()  渲染之前处理业务 render()  渲染页面 componentDidMount()  渲染之后执行，比如请求网络
+3.更新componentWillRecieveProps()">
 <meta name="twitter:creator" content="@scorp31io">
 
     
@@ -73,12 +81,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2015/11/26/react-intro/" title="React生命周期" itemprop="url">React生命周期</a>
@@ -92,9 +98,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <h2 id="React生命周期">React生命周期</h2><h4 id="1-创建类">1.创建类</h4><p>var Lifecycle = React.createClass({})</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#React生命周期"><span class="toc-number">1.</span> <span class="toc-text">React生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-创建类"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.创建类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-实例化"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.实例化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-更新"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.更新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-销毁"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.销毁</span></a></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<h2 id="React生命周期">React生命周期</h2><h4 id="1-创建类">1.创建类</h4><p>var Lifecycle = React.createClass({})</p>
 <h4 id="2-实例化">2.实例化</h4><p> getInitialState()  初始化state<br> componentWillMount()  渲染之前处理业务<br> render()  渲染页面<br> componentDidMount()  渲染之后执行，比如请求网络</p>
 <h4 id="3-更新">3.更新</h4><p>componentWillRecieveProps()  props改变会回调<br>shouldComponentUpdate()     是否执行更新周期<br>componentWillUpdate()   页面重新渲染之前处理逻辑<br>render: 渲染页面<br>componentDidUpdate:              重新渲染页面后执行</p>
 <h4 id="4-销毁">4.销毁</h4><p>componentWillUnmount()         销毁回调<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 学习react生命周期</span><br><span class="line"> * auth honaf</span><br><span class="line"> */</span></span><br><span class="line"><span class="pi">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> React = <span class="built_in">require</span>(<span class="string">'react-native'</span>);</span><br><span class="line"><span class="keyword">var</span> &#123;</span><br><span class="line">  AppRegistry,</span><br><span class="line">  StyleSheet,</span><br><span class="line">  Text,</span><br><span class="line">  View,</span><br><span class="line">&#125; = React;</span><br><span class="line"><span class="keyword">var</span> Util = <span class="built_in">require</span>(<span class="string">'ShopMall/views/Util'</span>);</span><br><span class="line"><span class="keyword">var</span> className = <span class="string">'Lifecycle==&gt;'</span>;</span><br><span class="line"><span class="keyword">var</span> Lifecycle = React.createClass(&#123;</span><br><span class="line">  getDefaultProps()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'getDefaultProps()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  getInitialState()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'getInitialState()'</span>);</span><br><span class="line">    <span class="keyword">return</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  componentWillMount()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'componentWillMount()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  componentDidMount()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'componentDidMount()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  componentWillReceiveProps()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'componentWillReceiveProps()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  shouldComponentUpdate()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'shouldComponentUpdate()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  componentWillUpdate()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'componentWillUpdate()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  componentDidUpdate()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'componentDidUpdate()'</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    Util.log(className+<span class="string">'render'</span>);</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">View</span> <span class="attribute">style</span>=<span class="value">&#123;styles.container&#125;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">Text</span> <span class="attribute">style</span>=<span class="value">&#123;styles.welcome&#125;</span>&gt;</span></span><br><span class="line">          Welcome to React Native!</span><br><span class="line">        <span class="tag">&lt;/<span class="title">Text</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">View</span>&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> styles = StyleSheet.create(&#123;</span><br><span class="line">  container: &#123;</span><br><span class="line">    flex: <span class="number">1</span>,</span><br><span class="line">    justifyContent: <span class="string">'center'</span>,</span><br><span class="line">    alignItems: <span class="string">'center'</span>,</span><br><span class="line">    backgroundColor: <span class="string">'#F5FCFF'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = Lifecycle;</span><br></pre></td></tr></table></figure></p>
@@ -104,14 +117,9 @@
 <p> 运行结果：<br> Lifecycle==&gt;getDefaultProps()<br> Lifecycle==&gt;getInitialState()<br> Lifecycle==&gt;componentWillMount()<br> Lifecycle==&gt;render<br> Lifecycle==&gt;componentDidMount()<br> Lifecycle==&gt;shouldComponentUpdate()<br>4.我们添加一个子组件再来测试一下,现在头部导入子组件，然后再添加到view中，可以看到当头部require了子组件（LifecycleItem统称为子组件）时，子组件的getDefaultProps()执行了,然后就是当前组件创建，执行getDefaultProps，执行实例化周期，到render渲染之时再实例化子组件，然后再调用当前组件componentDidMount，其中有setState,必然会执行更新周期，由于shouldComponentUpdate中返回false,就终止了更新的周期。（如下代码及打印）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> LifecycleItem = <span class="built_in">require</span>(<span class="string">'./LifecycleItem'</span>);</span><br><span class="line"></span><br><span class="line">render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    Util.log(className+<span class="string">'render'</span>);</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">View</span> <span class="attribute">style</span>=<span class="value">&#123;styles.container&#125;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">Text</span> <span class="attribute">style</span>=<span class="value">&#123;styles.welcome&#125;</span>&gt;</span></span><br><span class="line">          Welcome to React Native!</span><br><span class="line">        <span class="tag">&lt;/<span class="title">Text</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">LifecycleItem</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">View</span>&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
 <p>打印结果：<br> ~~LifecycleItem==&gt;getDefaultProps()<br> Lifecycle==&gt;getDefaultProps()<br> Lifecycle==&gt;getInitialState()<br> Lifecycle==&gt;componentWillMount()<br> Lifecycle==&gt;render<br>   ~~LifecycleItem==&gt;getInitialState()<br>   ~~LifecycleItem==&gt;componentWillMount()<br>   ~~LifecycleItem==&gt;render<br>   ~~LifecycleItem==&gt;componentDidMount()<br> Lifecycle==&gt;componentDidMount()<br> Lifecycle==&gt;shouldComponentUpdate()<br>5.此时我们将shouldComponentUpdate中返回false,可以看到当前组件更新render之时也触发了子组件的props change的周期，而实际上props我们没有做任何更改，这个大家一起讨论交流<br><img src="http://img.blog.csdn.net/20151126184328776" alt=""><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">shouldComponentUpdate()&#123;</span><br><span class="line">    Util.log(className+<span class="string">'shouldComponentUpdate()'</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></p>
 <p>打印结果：<br>    ~~LifecycleItem==&gt;getDefaultProps()<br> Lifecycle==&gt;getDefaultProps()<br> Lifecycle==&gt;getInitialState()<br> Lifecycle==&gt;componentWillMount()<br> Lifecycle==&gt;render<br>   ~~LifecycleItem==&gt;getInitialState()<br>   ~~LifecycleItem==&gt;componentWillMount()<br>   ~~LifecycleItem==&gt;render<br>   ~~LifecycleItem==&gt;componentDidMount()<br> Lifecycle==&gt;componentDidMount()<br> Lifecycle==&gt;shouldComponentUpdate()<br> Lifecycle==&gt;componentWillUpdate()<br> Lifecycle==&gt;render<br>  ~~LifecycleItem==&gt;componentWillReceiveProps()<br>   ~~LifecycleItem==&gt;shouldComponentUpdate()<br>   ~~LifecycleItem==&gt;componentWillUpdate()<br>   ~~LifecycleItem==&gt;render<br>   ~~LifecycleItem==&gt;componentDidUpdate()<br> Lifecycle==&gt;componentDidUpdate()</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -129,301 +137,47 @@
 
 
 
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://ngstyle.github.io/2015/11/26/react-intro/" data-title="React生命周期 | Scorp31io&#39;s Blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
 
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/11/26/react-intro/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/11/26/react-intro/" data-count-type="comments">&nbsp;</a>
-	
-</div>
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/11/24/git-ssh/" title="让你的Git使用上ssh协议授权" itemprop="url">让你的Git使用上ssh协议授权</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Scorp31io" target="_blank" itemprop="author">Scorp31io</a>
-		
-  <p class="article-time">
-    <time datetime="2015-11-24T10:24:45.000Z" itemprop="datePublished"> 发表于 2015-11-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><a href="https://zh.wikipedia.org/zh/Secure_Shell" target="_blank" rel="external">维基百科：ssh</a></p>
-<h3 id="基本的ssh配置">基本的ssh配置</h3><h4 id="1-_Check_for_SSH_keys">1. Check for SSH keys</h4><p>First, we need to check for existing SSH keys on your computer. Open Git Bash and enter:<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ls -al ~/.ssh</span><br><span class="line"># Lists the files in your .ssh directory, if they exist</span><br></pre></td></tr></table></figure></p>
-<p>If you see an existing public and private key pair listed (for example id_rsa.pub and id_rsa) that you would like to use to connect to GitHub, you can skip Step 2 and go straight to Step 3.<br>（如果存在密钥对，密钥对的账号如果不是你所需配置网站的账号，还是需要重新生成）</p>
-<h4 id="2-_Generate_a_new_SSH_key">2. Generate a new SSH key</h4><p>2.1 With Git Bash still open, copy and paste the text below. Make sure you substitute in your GitHub email address.<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</span><br><span class="line"># Creates a new ssh key, using the provided email as a label</span><br><span class="line"># Generating public/private rsa key pair.</span><br></pre></td></tr></table></figure></p>
-<p>or you can generate a key for the specified name use the commond below.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span> -f ~/.ssh/github</span><br></pre></td></tr></table></figure></p>
-<p>命名为github（这里叫什么随意，不要重名即可），然后会生成github和github.pub这两个文件</p>
-<p>2.2 We strongly suggest keeping the default settings as they are, so when you’re prompted to “Enter a file in which to save the key”, just press Enter to continue.</p>
-<p>2.3 You’ll be asked to enter a passphrase.(为了方便，直接enter略过)</p>
-<h4 id="3-_Add_your_key_to_the_ssh-agent">3.  Add your key to the ssh-agent</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-<p>可能会报 Could not open a connection to your authentication agent<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-agent bash</span><br><span class="line">$ eval `ssh-agent`</span><br></pre></td></tr></table></figure></p>
-<h4 id="4:_Add_your_SSH_key_to_your_account">4: Add your SSH key to your account</h4><p>打开公钥文件（id_rsa.pub），并把内容复制至代码托管平台上.</p>
-<h4 id="5:_Test_the_connection">5: Test the connection</h4><p>各平台：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git<span class="annotation">@github</span>.com</span><br><span class="line">$ ssh -T git<span class="annotation">@git</span>.coding.net</span><br><span class="line">$ ssh -T git<span class="annotation">@gitcafe</span>.com</span><br></pre></td></tr></table></figure></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/git/">git</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/git/">git</a><a href="/tags/ssh/">ssh</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-	  	<span></span>
-		<a href="/2015/11/24/git-ssh/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/11/24/git-ssh/" data-count-type="comments">&nbsp;</a>
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/11/24/git-ssh/"  title="让你的Git使用上ssh协议授权">
+ <strong>下一篇：</strong><br/> 
+ <span>让你的Git使用上ssh协议授权
+</span>
+</a>
+</div>
+
+</nav>
+
 	
-</div>
-
-</footer>
-
-
-    </article>
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/11/26/react-intro/" data-title="React生命周期" data-url="http://ngstyle.github.io/2015/11/26/react-intro/"></div>
+</section>
 
 
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/06/10/handler-detail/" title="Android Handler详解" itemprop="url">Android Handler详解</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Scorp31io" target="_blank" itemprop="author">Scorp31io</a>
-		
-  <p class="article-time">
-    <time datetime="2015-06-10T15:00:49.000Z" itemprop="datePublished"> 发表于 2015-06-10</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="Android为什么要设计只能通过Handler机制更新UI？">Android为什么要设计只能通过Handler机制更新UI？</h3><p>最根本的问题就是解决多线程并发问题，假设如果在一个Activity当中，有多个线程去更新UI,并且没有加锁机制，那将造成界面更新错乱。倘若如果对更新UI的操作都进行加锁处理又将导致性能的下降。</p>
-<p>处于对以上问题的考虑，android 给我们提供了一套UI更新的机制，我们只需遵循这样的机制就可以了，不用担心多线程的问题，更新UI的操作都是在主线程的消息队列中去轮询处理的。</p>
-<h3 id="Handler_原理是什么？">Handler 原理是什么？</h3><p>Android上一个应用的入口是ActivityThread，和普通的java类一样，入口是一个main方法。在其中会给我们创建一个Looper，创建Looper的过程中会创建一个MessageQueue对象。<br>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/06/10/handler-detail/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/handler/">handler</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/06/10/handler-detail/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/06/10/handler-detail/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/06/08/stickylayout/" title="当乐软件详情页实现" itemprop="url">当乐软件详情页实现</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Scorp31io" target="_blank" itemprop="author">Scorp31io</a>
-		
-  <p class="article-time">
-    <time datetime="2015-06-08T14:43:39.000Z" itemprop="datePublished"> 发表于 2015-06-08</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><a href="https://github.com/ngstyle/StickyLayout" target="_blank" rel="external">源码下载地址</a></p>
-<blockquote>
-<p>基于 <a href="http://blog.csdn.net/lmj623565791/article/details/43649913" target="_blank" rel="external">Android 自定义控件 轻松实现360软件详情页</a></p>
-</blockquote>
-<p><img src="https://github.com/ngstyle/StickyLayout/raw/master/screenrecord.gif" alt=""></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/自定义控件/">自定义控件</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/06/08/stickylayout/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/06/08/stickylayout/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/06/05/just-now/" title="种一棵树最好的时间是十年前，其次是现在" itemprop="url">种一棵树最好的时间是十年前，其次是现在</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Scorp31io" target="_blank" itemprop="author">Scorp31io</a>
-		
-  <p class="article-time">
-    <time datetime="2015-06-05T07:34:26.000Z" itemprop="datePublished"> 发表于 2015-06-05</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>“我每一次挥动胳膊，都可以感觉到肌肉的震颤，我很确信，大重量的卧推一定会让我的胸大肌发育，我知道拼了命的锻炼，真的可以给我带来回报。但是其他很多东西，你没有任何拼命的方向，甚至是拼了命也没用，说不清。我喜欢健身房，喜欢这个地方，就像家一样。”</p>
-<p>这个臂围40的哥们慢悠悠的讲这句话的时候，我心里还是咯噔了一下。</p>
-<p>故事的剧情简单明了，女朋友刚刚实习，被温柔多金的经理所吸引，抛下了相伴三年的哥们。</p>
-<p>按照剧情发展，故事应该是这个卧推110kg的哥们揭露出经理的邪恶与阴险，英勇的从经理手中抢回女朋友从此过上幸福的生活，但是哥们跟我说，比人家差太多了：帅，体贴，父亲是公司大股东，已经给姑娘做好了很多规划……而我从很努力从农村考到县城再到大学，进了学校之后发现自己什么都不懂，不懂人情世故，不懂表达和交流，对这个花花世界其实一无所知，很少问爸妈怕给他们带来更多的烦恼，就像一个傻瓜一样成天骗自己All is well。<br>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/06/05/just-now/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/心路历程/">心路历程</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/随笔/">随笔</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/06/05/just-now/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/06/05/just-now/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#React生命周期"><span class="toc-number">1.</span> <span class="toc-text">React生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-创建类"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.创建类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-实例化"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.实例化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-更新"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.更新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-销毁"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.销毁</span></a></li></ol></li></ol></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -594,12 +348,69 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
 
 
 
@@ -673,9 +484,5 @@ $(document).ready(function(){
 
 <!-- Tiny_search End -->
 
-
-<a href="https://github.com/ngstyle"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
-	
-	
   </body>
- </html>
+</html>
