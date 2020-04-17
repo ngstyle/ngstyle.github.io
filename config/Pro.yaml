@@ -104,36 +104,6 @@ Proxy:
 #   password: "hZc69Tnzgc"
   # udp: true
 
-# Shadowsocks + simple-obfs
-# - name: "c1s3"
-#   type: ss
-#   server: c1s3.jamjams.net
-#   port: 33573
-#   cipher: aes-256-gcm
-#   password: "hZc69Tnzgc"
-#   plugin: obfs
-#   plugin-opts: 
-#     mode: tls # or http
-#     host: c1s3.jamjams.net
-
-# Shadowsocks + v2ray-plugin
-# - name: "3"
-#   type: ss
-#   server: 1.2.4.8
-#   port: 443
-#   cipher: chacha20-ietf-poly1305
-#   password: "password"
-#   plugin: v2ray-plugin
-#   plugin-opts: 
-#     mode: websocket # no QUIC now
-#     # tls: true # wss
-#     # skip-cert-verify: true
-#     # host: bing.com
-#     # path: "/"
-#     # mux: true
-#     # headers:
-#     #   custom: value
-
 # VMess
 - name: "nohc.ml"
   type: vmess
