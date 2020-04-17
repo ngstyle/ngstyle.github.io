@@ -112,8 +112,8 @@ Proxy:
 #   cipher: aes-256-gcm
 #   password: "hZc69Tnzgc"
 #   plugin: obfs
-#   plugin-opts: 
-#     mode: tls # or http
+#   plugin-opts:
+#     mode: tls or http
 #     host: c1s3.jamjams.net
 
 # Shadowsocks + v2ray-plugin
@@ -124,7 +124,7 @@ Proxy:
 #   cipher: chacha20-ietf-poly1305
 #   password: "password"
 #   plugin: v2ray-plugin
-#   plugin-opts: 
+#   plugin-opts:
 #     mode: websocket # no QUIC now
 #     # tls: true # wss
 #     # skip-cert-verify: true
